@@ -10,31 +10,6 @@ if (isset($_POST['chk'])) {
     $d = $_POST['d'];
 } //為了能讓使用者輸入值(從網頁取得值)
 ?>
-<?php
-$SN = 1;
-$EN = 9;
-$SN2 = 0;
-$EN2 = 9;
-$SN3 = 0;
-$EN3 = 9;
-$SN4 = 0;
-$EN4 = 9;
-// if(isset($_POST['chk2'])){//從網頁取得值
-//     $SN=$_POST['SN'];
-//     $EN=$_POST['EN'];
-//     $getNumber=$_POST['getNumber'];
-//     $SN2=$_POST['SN2'];
-//     $EN2=$_POST['EN2'];
-//     $getNumber2=$_POST['getNumber2'];
-//     $SN3=$_POST['SN3'];
-//     $EN3=$_POST['EN3'];
-//     $getNumber3=$_POST['getNumber3'];
-//     $SN4=$_POST['SN4'];
-//     $EN4=$_POST['EN4'];
-//     $getNumber=$_POST['getNumber4'];    
-// }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -161,16 +136,20 @@ $EN4 = 9;
                 排序皆相同者，則中頭等獎，數字相同排序不同則是二等獎。</P>
             <br>
             <hr width="35%">
-            <br>
-            <!-- <form action="try99.php" id="form2" name="form2" method="post"> -->
+            <br>            
             <input type="hidden" id="chk2" name="chk2" value="form1">
             <input type="submit" name="button1" id="button1" value="繼續兌獎">
         </form>
 
-
-
-
         <?php
+        $SN = 1;
+        $EN = 9;
+        $SN2 = 0;
+        $EN2 = 9;
+        $SN3 = 0;
+        $EN3 = 9;
+        $SN4 = 0;
+        $EN4 = 9;
         if (isset($_POST['chk2'])) {
             $numbers = 0; //數字
             $pos = 0; //位置
@@ -224,18 +203,8 @@ $EN4 = 9;
 
         ?>
     </div>
-    <!--  X    <script type="text/javascript">
-    document.getElementById("a").value = <?php //echo $a; 
-                                            ?>
-    document.getElementById("b").value = <?php //echo $b; 
-                                            ?>
-    document.getElementById("c").value = <?php //echo $c; 
-                                            ?>
-    document.getElementById("d").value = <?php //echo $d; 
-                                            ?>
-    // document.getElementByTagName("h4").innerPhp = <?php //echo $a.$b.$c.$d; 
-                                                        ?>
-</script> -->
+    
+
 </body>
 
 </html>
